@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import os
 from setuptools import setup
 
 requires = [
@@ -7,12 +8,17 @@ requires = [
     'tornado',
     ]
 
+def read(name):
+    return open(os.path.join(os.path.dirname(__file__), name)).read()
+
 setup(
     name='miuraserver',
     version='0.1.0',
     description='MIURA server: pattern matcher for morpheme sequences',
+    long_description=read('README.rst'),
     author='Yuya Unno',
     author_email='unnonouno@gmail.com',
+    url='https://github.com/unnonouno/miuraserver',
     packages=['miuraserver',
               ],
     scripts=[
