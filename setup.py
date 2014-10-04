@@ -16,7 +16,7 @@ setup(
     packages=['miuraserver',
               ],
     scripts=[
-        'command/miuraserver',
+        'scripts/miuraserver',
     ],
     install_requires=requires,
     license='MIT',
