@@ -1,0 +1,5 @@
+include README.rst
+include LICENSE
+include ChangeLog.rst
+include scripts/mrepserver
+recursive-include mrepserver *.py *.html
