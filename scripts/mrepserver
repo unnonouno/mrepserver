@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import mrepserver.server
+
+if __name__ == '__main__':
+    mrepserver.server.run()

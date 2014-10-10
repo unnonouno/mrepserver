@@ -4,7 +4,7 @@ import os
 from setuptools import setup
 
 requires = [
-    'miura',
+    'mrep',
     'tornado',
     ]
 
@@ -12,17 +12,17 @@ def read(name):
     return open(os.path.join(os.path.dirname(__file__), name)).read()
 
 setup(
-    name='miuraserver',
+    name='mrepserver',
     version='0.1.0',
-    description='MIURA server: pattern matcher for morpheme sequences',
+    description='MREP server: morpheme regular expression printer',
     long_description=read('README.rst'),
     author='Yuya Unno',
     author_email='unnonouno@gmail.com',
-    url='https://github.com/unnonouno/miuraserver',
-    packages=['miuraserver',
+    url='https://github.com/unnonouno/mrepserver',
+    packages=['mrepserver',
               ],
     scripts=[
-        'scripts/miuraserver',
+        'scripts/mrepserver',
     ],
     install_requires=requires,
     license='MIT',

@@ -8,9 +8,10 @@ import traceback
 import tornado.ioloop
 import tornado.web
 
-import miura.builder as builder
-import miura.morph as morph
-import miura.pattern as pattern
+import mrep.builder as builder
+import mrep.morph as morph
+import mrep.pattern as pattern
+
 
 class Database(object):
     def __init__(self, sentences):
@@ -39,6 +40,7 @@ class Database(object):
 
         return results
 
+
 class TopHandler(tornado.web.RequestHandler):
     def initialize(self, db):
         self.db = db
@@ -49,6 +51,7 @@ class TopHandler(tornado.web.RequestHandler):
                     pat='',
                     error=None,
                     trace=None)
+
 
 class FindHandler(tornado.web.RequestHandler):
     def initialize(self, db):
@@ -72,7 +75,8 @@ class FindHandler(tornado.web.RequestHandler):
 
 
 def run():
-    parser = argparse.ArgumentParser(description='MIURA: morpheme i u regexp a')
+    parser = argparse.ArgumentParser(
+        description='MREP server: morpheme regular expression printer')
     parser.add_argument('file', metavar='FILE',
                         help='data file')
     parser.add_argument('-p', '--port', type=int, required=False, default=8080,
