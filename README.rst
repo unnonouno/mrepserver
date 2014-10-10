@@ -1,6 +1,6 @@
-=================================================
- MREP server: Morpheme Regular Exression Printer
-=================================================
+==================================================
+ MREP server: Morpheme Regular Expression Printer
+==================================================
 
 MREP is a regular expression matcher for morpheme sequences.
 This program is a simple web server to use MREP from a browser.
