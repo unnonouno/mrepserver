@@ -36,7 +36,7 @@ Usage
 
    usage: mrepserver [-h] [-p PORT] FILE
 
-MREP: morpheme i u regexp a
+MREP server: morpheme regular expression printer
 
 positional arguments:
   :`FILE`:                  data file
