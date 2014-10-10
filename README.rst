@@ -1,16 +1,16 @@
-=====================================
- MIURA server: Morpheme I U Regexp A
-=====================================
+=================================================
+ MREP server: Morpheme Regular Exression Printer
+=================================================
 
-MIURA is a regular expression matcher for morpheme sequences.
-This program is a simple web server to use MIURA from a browser.
+MREP is a regular expression matcher for morpheme sequences.
+This program is a simple web server to use MREP from a browser.
 
 
 Requirement
 ===========
 
 - Python 2.7
-- miura
+- mrep
 - tornado
 
 
@@ -19,7 +19,7 @@ Install
 
 ::
 
-   $ pip install miuraserver
+   $ pip install mrepserver
 
 
 If you want to install it from its source, use `setup.py`.
@@ -34,9 +34,9 @@ Usage
 
 ::
 
-   usage: miuraserver [-h] [-p PORT] FILE
+   usage: mrepserver [-h] [-p PORT] FILE
 
-MIURA: morpheme i u regexp a
+MREP: morpheme i u regexp a
 
 positional arguments:
   :`FILE`:                  data file
